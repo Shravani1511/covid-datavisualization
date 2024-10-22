@@ -27,6 +27,7 @@ df['date'] = pd.to_datetime(df['date'])
 
 # Initialize Dash app
 app = dash.Dash(__name__)
+server=app.server
 
 # Layout of the dashboard
 app.layout = html.Div([
